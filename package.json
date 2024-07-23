@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@rjsf/bootstrap-4": "^5.19.3",
+    "@rjsf/core": "^5.19.3",
+    "@rjsf/validator-ajv6": "^5.19.3",
+    "ajv": "^8.17.1",
+    "json-schema-ref-parser": "^9.0.9",
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "typescript": "^5",
