@@ -3,10 +3,9 @@ import { Inter } from "next/font/google";
 import Form from "@rjsf/core";
 import Head from "next/head";
 import RefParser from "json-schema-ref-parser";
-import Ajv from "ajv";
+import validator from "@rjsf/validator-ajv8";
 
 const inter = Inter({ subsets: ["latin"] });
-const ajv = new Ajv();
 
 export default function Home() {
   const [schema, setSchema] = useState<any>(null);
@@ -44,7 +43,7 @@ export default function Home() {
         {loading ? (
           <p>Loading schema...</p>
         ) : schema ? (
-          <Form schema={schema} validator={ajv}>
+          <Form schema={schema} validator={validator}>
             <div />
           </Form>
         ) : (
