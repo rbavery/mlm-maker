@@ -9,10 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@rjsf/bootstrap-4": "^5.19.3",
-    "@rjsf/core": "^5.19.3",
-    "@rjsf/validator-ajv6": "^5.19.3",
-    "@rjsf/validator-ajv8": "^5.19.3",
+    "@rjsf/bootstrap-4": "file:../react-jsonschema-form/packages/bootstrap-4",
+    "@rjsf/core": "file:../react-jsonschema-form/packages/core",
+    "@rjsf/validator-ajv6": "file:../react-jsonschema-form/packages/validator-ajv6",
+    "@rjsf/validator-ajv8": "file:../react-jsonschema-form/packages/validator-ajv8",
     "ajv": "^8.17.1",
     "json-schema-ref-parser": "^9.0.9",
     "next": "14.2.5",
